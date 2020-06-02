@@ -1,0 +1,162 @@
+html{
+    font-size: calc(100vw/7.5);
+}
+body{
+    font-size: .24rem;
+}
+header{   
+    width: 100vw;
+    height: 2.40rem;
+    background-color: rgb(5, 141, 204);
+    overflow: hidden;
+}
+.top{
+    display: flex;
+    margin-top: .45rem;
+    justify-content: space-around;
+}
+.top a:nth-child(1){
+    width: .6rem;
+    height: 0.5rem;
+    line-height: .5rem;
+}
+.input{
+    width: 4.5rem;
+    height: 0.5rem;
+    text-indent: .1rem;
+    background-color: rgba(4, 79, 114, 0.5);
+    border-radius: .1rem;
+}
+.iconfont.icon-weimingmingwenjianjia_tongxunlu{
+    font-size: .5rem;
+    color: rgb(233, 229, 229);
+}
+header img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+nav{
+    margin-top: .40rem;
+    display: flex;
+    justify-content: space-around;
+}
+nav span{
+    font-size: .20rem;
+    width: 0.7rem;
+    line-height: .28rem;
+}
+nav .iconfont.icon-weimingmingwenjianjia_tongxunlu{
+    font-size: .7rem;
+}
+/* <!-- 顶部end --> */
+/* <!-- function start --> */
+section{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: .10rem solid rgba(192, 192, 192,.5);
+}
+section .iconfont.icon-zhuanzhang{
+    font-size: 1rem;
+    color: cornflowerblue;
+}
+section a{
+    margin: .15rem .30rem;
+}
+.ant{
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.ant img{
+    width: 0.95rem;
+    height: 0.75rem;
+    margin-left: .2rem;
+}
+.ant li{
+    /* height: 0.3rem; */
+    line-height: .45rem;
+    text-indent: .5rem;
+    background: #fff url(../images/notice/grey.png) .35rem .225rem no-repeat;
+    background-size: .05rem .05rem;
+}
+.ant i{
+    font-size: .4rem;
+    position: absolute;
+    color: rgb(122, 121, 121);
+    right: .1rem;
+}
+.iconfont.icon-jiantouyou-copy{
+    font-size: .20rem;
+}
+/* <!-- function end --> */
+/* <!-- 广告部分 --> */
+main{
+    position: relative;
+    height: 1.8rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+.ad{
+    width: 100vw;
+    height: 5.4rem;
+    position: absolute;
+}
+.ad img{
+    width: 100%;
+    height: 1.8rem;
+    display: block;
+    float: left;
+}
+main label{
+    width: 0.15rem;
+    height: 0.15rem;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: .15rem;
+    transition: .5s;
+}
+.one{
+    left: 45%;
+    margin-right: .15rem;
+}
+.two{
+    left: 50%;
+}
+.three{
+    left: 55%;
+}
+main input:checked + label{
+    width: .3rem;
+    background-color: #ff0;
+}
+main input:checked + .two ~ .ad{
+    transform: translatey(-1.8rem);
+}
+main input:checked + .three ~ .ad{
+    transform: translatey(-3.6rem);
+}
+
+/* <!-- 底部start --> */
+footer{
+    height: 1rem;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+footer .iconfont.icon-zhuanzhang{
+    font-size: .7rem;
+    color: cornflowerblue;
+}

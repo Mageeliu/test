@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/public.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .a{
+        background-color: #ff0;
+    }
+    .a1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /* float: left; */
+        margin: auto;
+        position: relative;
+    }
+    .past{
+        width: 200px;height: 300px;
+        background-color: #f0f;
+        /* margin: auto; */
+    }
+    .d h3:nth-child(3n){
+        color: #f0f;
+    }
+
+    .d p:nth-child(5){
+        font-size: 24px;
+        color: #f00;
+    }
+    .d p:nth-of-type(4){
+        font-weight: bold;
+    }
+    .d h3:last-child{
+        color: orangered;
+    }
+    .d h3:first-child{
+        color: palegreen;
+    }
+    .d h3:first{
+        font-size: 30px;
+    }
+    ul li + li{
+        color: palegreen;
+    }
+    .d h3 + p{
+        background-color: #ff0;
+    }
+    label{
+        display: block;
+        width: calc(60px + 2px);
+        height: 60px;
+        line-height: 60px;
+        border-radius: 100%;
+        background-color: #f00;
+        text-align: center;
+    }
+    input:checked + label{
+        background-color: #ff0;
+    }
+
+
+</style>
+<body>
+    <!-- <div class="a">
+        <div class="a1"></div>
+    </div>
+    <canvas class="past">
+    </canvas>
+    <option value=""></option>
+
+    <datalist>
+        <option value=""></option>
+    </datalist> -->
+    <!-- <form action="">
+        <input type="checked" id="d">
+        <label for="d" name="s">user</label>
+        <label for="d" name="s">user</label>
+    </form> -->
+   <div class="d clear w">
+       <h3>h3111111</h3>
+       <p>ppppp2222222</p>
+       <h3>3333333</h3>
+       <h1>00000</h1>
+       <p>ppp44444444</p>
+       <h4>555555555</h4>
+       <p>ppp666666666</p>
+       <h4>777777777</h4>
+       <p>ppp88888888888</p>
+       <h3>99999999999</h3>
+       <input type="radio" name="s" id="first">1
+       <label for="first"></label>
+       <input type="radio" name="s" id="second">2
+       <label for="second"></label>
+       <input type="radio" name="s" id="third">3
+       <label for="third">button</label>
+   </div>
+   <ul>
+       <li>11111</li>
+       <li>2222</li>
+       <li>3333</li>
+       <li>44444</li>
+   </ul>
+</body>
+</html>

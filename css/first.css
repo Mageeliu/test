@@ -1,0 +1,182 @@
+/* logo */
+.logo{
+    width: 1001px;
+    height: 65px;
+    margin: auto;
+    background-color: #cfff;
+}
+.logo ul{
+    line-height: 65px;
+    text-align: center;
+}
+.label1:hover{
+    background-color: orange;
+}
+.iwancar{
+    background-color: #deff;
+    width: 207px;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 65px;
+    font-size: 0;
+}
+.iwancar img{
+    width: 35px;
+    height: 50px;
+    vertical-align: middle;
+    /* border-radius: 100%; */
+}
+.label1{
+    width: 97px;
+    height: 100%;
+    border-right: solid gray;
+    float: left;
+}
+.x{
+    border-right: none;
+}
+/* ********end**************** */
+.picture{
+    width: 1001px;
+    height: 400px;
+    margin: auto;
+}
+.picture img{
+    width: 1001px;
+    height: 100%;
+}
+/* 介绍start */
+.introduce{
+    width: 1001px;
+    height: 300px;
+    margin: auto;
+    background-color: #e6ddeb;
+}
+.module{
+    width: 198px;
+    height: 250px;
+    margin-top: 25px;
+    /* background-color: green; */
+    border-right: solid gray ;
+    /* border-right: none; */
+    float: left;
+    text-align: center;
+}
+.moduleoff{
+    width: 198px;
+    height: 250px;
+    margin-top: 25px;
+    /* /* background-color: green; * */
+    /* border-right: solid gray ; */
+    border-right: none;
+    float: left;
+    text-align: center;
+ }
+.introduce img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-top: 25px;
+}
+/* 介绍end */
+/* <!-- 商业介绍 --> */
+.comercial{
+    width: 961px;
+    height: 240px;
+    /* background-color: #cff; */
+    margin: auto;
+    padding: 20px;
+}
+.news{
+    width: 300px;
+    height: 250px;
+    /* margin-left: 30px; */
+    background-image: url(../images/cartoon/pretty-girl.png);
+    background-size: 300px 250px;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+}
+/* 2020.5.19 21.20 */
+.contact{
+    width: 300px;
+    height: 250px;
+    /* background-color: orange; */
+    float: left;
+    border-right: solid gray;
+}
+.contact h5{
+    width: 240px;
+    height: 100px;
+    margin: auto;
+    text-align: left;
+    border-bottom: solid gray;
+}
+.rules{
+    width: 240px;
+    height: 150px;
+    margin: auto;
+    margin-top: 30px;
+}
+.rules li{
+    text-indent: 15px;
+    background-image: url(../images/jiantou.png);
+    background-size: 12px 12px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    line-height: 24px;
+}
+.faxnumber{
+    width: 310px;
+    height: 210px;
+    padding: 20px;
+    /* margin-right: 10px; */
+    float: left;
+    /* background-color: red; */
+}
+.faxnumber img{
+    width: 150px;
+    height: 35px;
+}
+.faxnumber h5{
+    line-height: 32px;
+    margin-left: 30px;
+}
+/* <!-- 商业介绍  end--> */
+.end{
+    width: 961px;
+    height: 200px;
+    margin: auto;
+    background-color: gray;
+    padding: 20px;
+}
+.same{
+    width: 100px;
+    height: 140px;
+    float: left;  
+}
+.same h5{
+    line-height: 35px;
+}
+.map{
+    width: 200px;
+    height: 140px;
+    border-left: solid black;
+    border-right: solid black;
+    float: left;
+    padding: 10px;
+}
+.map img{
+    width: 200px;
+    height: 120px;
+    /* text-align: center; */
+}
+.wechat img{
+    margin-left: 30px;
+    width: 160px;
+    height: 160px;
+}
+
+

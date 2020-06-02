@@ -1,0 +1,431 @@
+/* <!-- 开屏展示 --> */
+.rose{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    /* background-color: rgba(211, 136, 136,.5); */
+    display: none;
+}
+.flower{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    left: 0;right: 0;top: 0;bottom: 0;margin: auto;
+    /* top: 50%; */
+}
+.flash{
+    width: 100%;height: 100%;
+}
+/* body:hover .rose{
+    display: block;
+} */
+/* <!-- top start --> */
+.top{
+    width: 1000px;
+    height: 34px;
+    background-color: #efc;
+    margin: auto;
+}
+.top-left{
+    width: 180px;
+    height: 100%;
+    float: left;
+}
+.top-l{
+    width: 90px;
+    height: 34px;
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    /* margin-left: 15px; */
+}
+.arrow{
+    width: 20px;
+    height: 12px;
+    font-size: 15px;
+    position: absolute;
+    left: 0;right: 0;margin: auto; top: 32px;
+    /* display: none; */
+}
+.top-l:hover {
+    height: 35px;
+    color: #ffffff;
+    background-color: #000;
+    overflow: visible;
+}
+.top-right{
+    width: 540px;
+    height: 34px;
+    float: right;
+}
+.top-r{
+    width: 89px;
+    height: 24px;
+    text-align: center;
+    float: left;
+    margin-top: 5px;
+    border-right: 1px darkgray solid;
+}
+.top-off{
+    border-right: none;
+}
+.logo-h{
+    width: 1000px;
+    height: 80px;
+    margin: auto;
+    /* float: left; */
+}
+.logo{
+    width: 420px;
+    height: 100%;
+    font-size: 28px;
+    text-align: left;
+    line-height: 80px;
+    float: left;
+}
+.like{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    /* line-height: 80px; */
+}
+.name{
+    border-bottom: 1.5px red solid;
+}
+.logo-r{
+    width: 250px;
+    height: 40px;
+    padding-top: 20px;
+    float: right;
+}
+.input{
+    width: 196px;height: 37px;
+    border: 1px darkgray solid;
+    float: left;
+}
+.eye{
+    width: 50px;
+    height: 37px;
+    /* display: block; */
+}
+/* <!-- top end --> */
+/* <!-- head start --> */
+.heading{
+    width: 100%;
+    height: 45px;
+    background-color: #f00;
+}
+.head{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    line-height: 45px;
+    position: relative;
+}
+.ver{
+    width: 2px;
+    height: 45px;
+    font-size: 12px;
+    float: right;
+    color: darkgray;
+}
+.l{
+    float: left;
+}
+.head-in{
+    width: 125px;
+    height: 45px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.hide-head{
+    width: 1000px;
+    height: 380px;
+    background-color: #ff00aa;
+    position: absolute;
+    top: 45px;
+    left: 0;right: 0;margin: auto;
+    display: none;
+}
+.hide-head img{
+    height: 100%;
+}
+.head-in:hover{
+    background-color: rgba(65, 13, 13, 0.5);
+}
+.head-in:hover .hide-head{
+    display: block;
+}
+.head-fig{
+    width: 100%;
+    height: 380px;
+    background-color: rgb(0, 174, 255);
+}
+.fox{
+    width: 1000px;
+    height: 380px;
+    /* text-align: center; */
+    display: block;
+    margin: auto;
+}
+/* <!-- head end --> */
+/* <!-- 通知start --> */
+.inform{
+    width: 1000px;
+    height: 45px;
+    margin: auto;
+    border-bottom: darkgray 1px solid;
+}
+.inform-l{
+    width: 600px;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    background-image: url(../images/notice/like.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    background-size: 25px 25px;
+}
+.love{
+    height: 45px;
+    width: 120px;
+    float: left;
+    text-indent: 35px;
+    line-height: 45px;
+}
+.inform-m{
+    width: 330px;
+    height: 45px;
+    margin-left: 15px;
+    line-height: 45px;
+}
+.inform-r{
+    width: 90px;
+    height: 45px;
+    line-height: 45px;
+    float: right;
+}
+/* <!-- 通知end --> */
+/* <!-- diverse start --> */
+.diverse{
+    height: 200px;
+    width: 1000px;
+    background-color: rgb(196, 189, 189);
+    margin: auto;
+    position: relative;
+}
+.gesture{
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+.gesture-tu{
+    width: 100%;
+    height: 155px;
+    margin-bottom: 5px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.insert{
+    width: 60px;height: 60px;
+    padding: 50px 70px 10px 70px;
+}
+.gesture-hide{
+    width: 200px;
+    height: 240px;
+    position: absolute;
+    bottom: -241px;
+    background-color: #ff0;
+    display: none;
+}
+.gesture-hide img{
+    width: 100%;
+    /* height: 240px; */
+}
+.gesture-tu:hover .gesture-hide{
+    display: block;
+}
+.gesture-tu:hover{
+    transform: scale(1.1);
+    border-bottom: solid orangered 2px;
+}
+.diverse h5{
+    height: 32px;
+    text-align: center;
+    font-size: 18px;
+}
+.gesture-bot{
+    height: 32px;
+    text-align: center;
+    font-size: 12px;
+}
+/* <!-- diverse end --> */
+/* <!-- 理财start --> */
+.function{
+    width: 1000px;
+    height: 535px;
+    background-color: #fdd;
+    margin: auto;
+}
+.smart{
+    width: 180px;
+    height: 60px;
+    margin: auto;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(160, 40, 100);
+    font-size: 20px;
+    background-image: url(../images/notice/xin.png);
+    position: relative;
+    top: -12px;
+    z-index: 1;
+    background-size: 180px 60px;
+}
+.fun1{
+    width: 1000px;
+    height: 24px;
+    /* text-indent: 15px; */
+    line-height: 24px;
+    border-bottom: rgb(196, 189, 189) 4px dashed;
+    padding-bottom: 8px;
+}
+.fun1 img{
+    width: 5px;
+    height: 24px;
+}
+.function-sel{
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+}
+.option{
+    width: 665px;
+    height: 45px;
+    float: left;
+    margin-left: 15px;
+    padding-top: 20px;
+    border-bottom: grey 1px  solid;
+}
+.option li{
+    width: 95px;
+    height: 45px;
+    margin-left: 10px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    position: relative;
+}
+.option li:hover{
+    color: rgb(230, 29, 96);
+}
+.forever{
+    width: 95px;
+    height: 65px;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    visibility: hidden;
+    transition: 0.52s;
+}
+.option li:hover .forever{
+    visibility: visible;
+    /* display: block; */
+    transform: scale(1.314);
+}
+.option-hide img{
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    left: -10px;top: 55px;
+    visibility: hidden;
+}
+.option li:hover .option-hide img{
+    visibility: visible;
+}
+
+.life{
+    width: 1000px;
+    height: 380px;
+    float: left;
+    /* background-color: #cfa; */
+}
+.life-true{
+    width: 650px;
+    height: 100%;
+    float: left;
+    background:  url(../images/notice/icon_sport.png) repeat 0px 0px;
+    background-size: 217px 190px;
+}
+.life-look{
+    width: 350px;
+    height: 373px;
+    float: left;
+}
+.life-look img{
+    width: 100%;
+    height: 100%;
+}
+/* <!-- 底部start --> */
+.serve{
+    width: 1000px;
+    height: 75px;
+    margin: auto;
+    border-bottom: darkgrey 1px solid;
+    padding-top: 20px;
+}
+.serve-top{
+    width: 199px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    border-right: darkgrey 1px solid;
+}
+.serve-top img{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.border-r{
+    border-right: none;
+}
+.bottom-under{
+    width: 1000px;
+    height: 300px;
+    margin: auto;
+}
+.under-l{
+    width: 200px;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    text-align: left;
+    text-indent: 15px;
+    line-height: 55px;
+}
+.box{
+    width: 240px;
+    height: 160px;
+    margin-top: 40px;
+    margin-left: 80px;
+    text-align: center;
+    border-left: solid grey 1px;
+    float: left;
+}
+.box i{
+    font-size: 35px;
+}
+.box h2:hover,.box img:hover,.box i:hover{
+    color: greenyellow;
+}
