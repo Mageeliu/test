@@ -35,7 +35,25 @@
     left: 0;bottom: 0;
     height: 350px;
     width: 1800px;
-    transition: .5s;
+    /* transition: .5s; */
+    -webkit-animation: test 3s 1s infinite;
+}
+@keyframes test{
+    0%{
+        transform: translate(0px);
+        .flex input:checked + .test:nth-child(4) ~ .trans{
+            transform: translate(-600px);
+        }
+    }
+    33.333%{
+        transform: translate(-600px);
+    }
+    66.666%{
+        transform: translate(-1200px);
+    }
+    100%{
+        transform: translate(-00px);
+    }
 }
 .trans img{
     display: block;
@@ -45,9 +63,6 @@
 }
 .flex input:checked + label{
     background-color: rgb(39, 209, 5);
-}
-.flex input:checked + .test:nth-child(4) ~ .trans{
-    transform: translate(-600px);
 }
 .flex input:checked + .test:nth-child(4) ~ .trans{
     transform: translate(-600px);
