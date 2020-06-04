@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画效果</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <style>
+        body{
+            perspective: -600px;
+        }
+        header{
+            display: -webkit-flex;
+            width: 500px;
+            height: 300px;
+            margin-top: 200px;
+            background: radial-gradient(rgb(201, 132, 5) 50%,yellow 50%) ;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            animation: dance .5s .5s infinite;
+        }
+        @keyframes dance{
+            0%{
+                transform: scale(1.2);
+                transform: skewx(30.5deg);
+                /* transform: translate3d(10px,0,30px); */
+            }
+            20%{
+                transform: scale(1.4);
+                transform: skewx(36deg);
+            }
+            40%{
+                transform: scale(1.6);
+            }
+            60%{
+                transform: scale(1.2);
+            }
+            80%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(.8);
+            }
+        }
+        main{
+            position: fixed;
+            left: 0;right: 0;top: 0;margin: 0;margin: auto;
+            width: 1200px;
+            height: 1200px;
+            margin-top: 100px;
+            /* background-color: rgb(184, 180, 180); */
+            transform-style: preserve-3d;
+            transform: rotatex(-20deg);
+            transform: rotateY(-20deg);
+            position: relative;
+            animation: box 5s 0 infinite;
+        }
+        @keyframes box{
+            from{
+                transform: rotatex(-20deg) rotatey(-20deg);
+            }
+            to{
+                transform: rotatex(-60deg) rotatey(360deg);
+            }
+        } 
+        div{
+            width: 398px;
+            height: 398px;
+            background-color: rgba(49, 171, 241, 0.2);
+            font-size: 45px;
+            line-height: 400px;
+            text-align: center;
+            border: 1px solid rgb(49, 46, 46);
+        }
+        div:nth-child(1){
+            position: absolute;
+            left: 400px;
+            top: 400px;
+        }
+        div:nth-child(2){
+            position: absolute;
+            left: 400px;
+            top: 400px;
+            transform: translatez(-400px);
+        }
+        div:nth-child(3){
+            position: absolute;
+            left: 400px;
+            transform: translatey(200px) translatez(200px) rotatex(-90deg);
+        }
+        div:nth-child(4){
+            position: absolute;
+            left: 400px;
+            transform: translatey(200px) translatez(200px) rotatex(-90deg);
+        }
+        div:nth-child(5){
+            position: absolute;
+            top: 400px;
+            left: 200px;
+            transform: rotateY(-90deg) translatex(-200px);
+        }
+        div:nth-child(6){
+            position: absolute;
+            top: 400px;
+            left: 600px;
+            transform: rotateY(-90deg) translatex(-200px);
+        }
+    </style>
+</head>
+<body>
+    <header class="w">
+        <span>never say never</span>
+    </header>
+    <main class="w">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </main>
+</body>
+</html>

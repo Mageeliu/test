@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7种居中方法</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    /* <!-- 方法一：转换为行内元素 已知高度--> */
+        .way1,.way2,.way3,.way4,.way5,.way6{
+            margin-left: 50px;
+        }
+        .way1{
+            width: 400px;
+            height: 400px;
+            background-color: #f0f;
+            line-height: 400px;
+            text-align: center;
+            font-size: 0;
+        }
+        .a1{
+            display: inline-block;
+            width: 100px;
+            height: 300px;
+            vertical-align: middle;
+            background-color: #000;
+        }
+    /* <!-- 方法二：转换为行内元素 未知高度--> */
+        .way2{
+            width: 400px;
+            height: 400px;
+            background-color: #f0f;
+            text-align: center;
+            font-size: 0;
+        }
+        .a0{
+            height: 100%;
+            /* width: 10px; */
+            background-color: #ff0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .a2{
+            display: inline-block;
+            width: 100px;
+            height: 300px;
+            background-color: #000;
+            vertical-align: middle;
+        }
+        /* <!-- 方法三：转化为table 未知高度 --> */
+        .way3{
+            display: table;
+            width: 400px;
+            height: 400px;
+            background-color: #f0f;
+        }
+        .aa{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 0;
+        }
+        .a3{
+            display: inline-block;
+            width: 100px;
+            height: 300px;
+            background-color: #000;
+        }
+    /* 方法四：定位+位移 未知高度 */
+        .way4{
+            width: 400px;
+            height: 400px;
+            background-color: #f0f;
+            position: relative;
+        }
+        .a4{
+            width: 100px;
+            height: 300px;
+            background-color: #000;
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+            transform: translate(-50%,-50%);
+        }
+        /* 方法五：弹性盒子 未知高度*/
+        .way5{
+            width: 400px;
+            height: 400px;
+            background-color: #f0f;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .a5{
+            width: 100px;
+            height: 300px;
+            background-color: #000;
+        }
+        /* 方法六：位移 未知高度*/
+        .way6{
+            width: 400px;
+            height: 400px;
+            background-color: #f0f;
+            overflow: hidden;
+        }
+        .a6{
+            width: 100px;
+            height: 300px;
+            background-color: #000;
+            margin: 50% 50%;
+            transform: translate(-50%,-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <h4>
+    左右居中方法：<br>
+    1、margin: auto;<br>
+    2、text-align: center;
+    3、弹性布局：justify-content: center;
+    <br><br>
+    上下居中原理：<br>
+    1、转换成行内元素：利用display: inline-block; 搭配 line-hight: xx;(已知高度)<br>
+    
+    2、转换成表格，利用表格自动上下居中：在父元素里用 display: table; 子元素(过渡元素)使用 display: table-cell; vertical-align: middle;<br>
+
+    3、利用位移：margin: 50% 50%; transform: translate(50%,50%);<br>
+
+    4、弹性盒子 display: flex; justify-content: center; align-items: center;
+    <br>
+    </h4>
+    方法一： 已知高度( 第一种：转化为行内元素；第二种：直接margin-top margin:auto;)
+    <div class="way1">
+        <div class="a1"></div>
+    </div>
+    <br>
+    /* 方法二：转换为行内元素 未知高度*/
+    <div class="way2">
+        <div class="a0"></div>
+        <div class="a2"></div>
+    </div>
+    <br>
+    /* 方法三：转化为table 未知高度*/
+    <div class="way3">
+        <div class="aa">
+            <div class="a3"></div>
+        </div>
+    </div>
+    <br>
+    /* 方法四：定位+位移 未知高度*/
+    <div class="way4">
+        <div class="a4"></div>
+    </div>
+    <br>
+    /* 方法五：弹性盒子 未知高度*/
+    <div class="way5">
+        <div class="a5"></div>
+    </div>
+    <br>
+    /* 方法六：位移 未知高度*/
+    <div class="way6">
+        <div class="a6"></div>
+    </div>
+</body>
+</html>
