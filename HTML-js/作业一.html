@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = Math.random()*1500 + 1000, y = Math.random()*11 + 1;
+        var year = Math.round(x), month = Math.round(y), day = 1;
+        // var year = 2001, month = 12, day = 31;
+
+        document.write("公元" + year + "年" + month + "月" + day + "日。<br/>" ) ;
+        if(year%4 ==0 && year%100 !=0 || year%400 ==0 )
+        {
+            document.write("那一年是闰年。<br/>" );
+            if(month == 2)
+            {
+                var num = --month*30 + Math.round(++month/2) + day ;
+                document.write("这一天是那一年的第"+ num +"天。<br/>");
+            }else if(8> month >= 3 || month == 1)
+            {
+                var num = --month*30 + Math.round(month/2) + day;
+                document.write("这一天是那一年的第"+ num +"天。<br/>");
+            }else
+            {
+                var num = --month*30 + Math.round(month/2)- 1 + day;
+                document.write("这一天是那一年的第"+ num +"天。<br/>");
+            }           
+        }else
+        {
+            document.write("这一年是平年。<br/>");
+            if(month == 2)
+            {
+                var num = --month*30 + Math.round(++month/2) + day;
+                document.write("这一天是那一年的第"+ num +"天。<br/>");
+            }else if(8> month >= 3 || month == 1)
+            {
+                var num = --month*30 + Math.round(month/2)-1 + day;
+                document.write("这一天是那一年的第"+ num +"天。<br/>");
+            }else
+            {
+                var num = --month*30 + Math.round(month/2) - 2+ day;
+                document.write("这一天是那一年的第"+ num +"天。<br/>");
+            }           
+        }
+    </script>
+</body>
+</html>

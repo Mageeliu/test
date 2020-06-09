@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字游戏</title>
+</head>
+
+<body>
+    <input type="text" id="num" placeholder="请输入0-50之间的数字">
+    <button id="btn">提交</button>
+    <input type="result" id="result">
+</body>
+<script>
+    var rand =Math.random()*50;
+    var n =Math.round(rand);
+    // var n = 1;
+    var btn =document.getElementById("btn");
+    var resultInput =document.getElementById("result");
+    var numInput = document.getElementById("num");
+    var x = numInput.value;
+    console.log('btn',btn)
+    btn.onclick = function() {
+        console.log(x)
+
+
+        if(x == n) 
+        {
+            resultInput.value = "so smart you are! you get the right number."
+            // document.write("so smart you are! you get the right number.");
+        }else if(n > x )
+        {
+            resultInput.value = "please input again! your number is large."
+            // document.write("please input again! your number is large.");
+        }else 
+        {
+            resultInput.Value = "please input again! your number is small."
+            // document.write("please input again! your number is small.");
+        }            
+    }       
+</script>
+</html>
